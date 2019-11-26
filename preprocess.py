@@ -8,7 +8,7 @@ Created on Mon Nov 18 18:55:42 2019
 #step 2 :according to 'data_identification.csv' spilt raw set into train set and test set
 #step 3 :merge 'emotion.csv' and train set on 'tweet_id',then it's time to do some pre-processing
 import pandas as pd
-df = pd.read_csv('trainset.csv',lineterminator = '\n')
+df = pd.read_csv('trainset_sample.csv',lineterminator = '\n')
 df.columns = ['id','text','emotion']
 df['emotion']=df['emotion'].apply(lambda x:x.replace('\r',''))
 
